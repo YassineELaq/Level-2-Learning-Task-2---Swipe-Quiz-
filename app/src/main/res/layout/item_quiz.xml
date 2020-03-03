@@ -9,6 +9,12 @@
         android:id="@+id/tvQuizes"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
