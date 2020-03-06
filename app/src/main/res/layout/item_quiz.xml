@@ -10,10 +10,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="16sp"
-        android:paddingBottom="15dp"
-        android:paddingTop="15dp"
+        android:paddingBottom="28dp"
+        android:paddingTop="28dp"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
+        android:background="@color/white"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

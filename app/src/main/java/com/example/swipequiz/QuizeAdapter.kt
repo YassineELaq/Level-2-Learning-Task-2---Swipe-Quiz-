@@ -3,6 +3,7 @@ package com.example.swipequiz
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_quiz.view.*
 
@@ -13,6 +14,14 @@ class QuizeAdapter(private val quizes: List<Quize>) :
 
         fun bind(quize: Quize) {
             itemView.tvQuizes.text = quize.quizeText
+
+            itemView.setOnClickListener {
+                val resourceId = if(quize.isCorrect) "This is correct"
+                else "This is not correct"
+                Toast.makeText(itemView.context, resourceId, Toast.LENGTH_SHORT).show()
+
+            }
+
         }
     }
 

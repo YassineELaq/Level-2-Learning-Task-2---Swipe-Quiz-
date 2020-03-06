@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
 
 
         val callback = object :
-            ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT + ItemTouchHelper.RIGHT) {
+            ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT ) {
 
             // Enables or Disables the ability to move items up and down.
             override fun onMove(
@@ -85,9 +85,9 @@ class MainActivity : AppCompatActivity() {
                         }else{
                             onAnswerIncorrect()
                             quizeAdapter.notifyDataSetChanged()
-
                         }
                     }
+
                     else -> {
                         errorText()
                     }
